@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+  }
+  
+  .leftSection {
+    background-image: url('/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+  
+  .step {
+    font-weight: bold;
+    font-size: 3.0em;
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .step svg {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    fill: #fff;
+  }
+  
+  .rightSection {
+    width: 50%;
+    padding: 50px;
+    color: #FFA500;
+  }
+  
+  .rightSection h2 {
+    color: #FFA500;
+  }
+  
+  .formControl {
+    margin-bottom: 15px;
+    border-radius: 12px;
+  }
+  
+  .fa-solid.fa-circle-check {
+    font-size: 32px;
+  }
+  
+  .btnContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .btn-link {
+    color: #FFA500;
+    border: none;
+  }
+  
+  .btn-link:hover {
+    color: #FFA500;
+  }
+  
+  .input-group-prepend .input-group-text {
+    border-radius: 0 12px 12px 0;
+  }
+  
+  .input-group-text i {
+    font-size: 1.2rem;
+  }
+  
+  .step.s {
+    margin-bottom: 210px;
+  }
+  
+  .textt {
+    padding-right: 9px;
+    font-size: 60px;
+  }
+  

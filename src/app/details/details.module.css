@@ -1,0 +1,170 @@
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .leftPanel {
+    flex: 1;
+    position: relative;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+  }
+  
+  .steps {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-size: 42px;
+    margin-left: 150px;
+    margin-top: 200px;
+    font-weight: bold;
+  }
+  
+  .step {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    
+  }
+  
+  .step.active {
+    font-weight: bold;
+  }
+  
+  .check {
+    margin-right: 10px;
+    
+    width: 60px;
+    height: 60px;
+    fill: #ffffff;
+  }
+  
+  .stepText {
+    color: #ffffff;
+    
+  }
+  
+  .stepNumber {
+    font-size: 1.0em;
+    margin-right: 10px;
+  }
+  
+  .stepThree {
+    font-size: 1.0em;
+    margin-right: 10px;
+  }
+  
+  .rightPanel {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .title {
+    margin: 0;
+    color: #f5a623;
+  }
+  
+  .description {
+    color: #f5a623;
+    padding-bottom: 32px;
+  }
+  
+  .option {
+    background-color: #33333310;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #f5a623;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .option:hover {
+    border-color: #f5a623;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .radioInput {
+    display: none;
+  }
+  
+  .checkboxInput {
+    display: none;
+  }
+  
+  .optionLabel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .optionText {
+    flex-grow: 1;
+  }
+  
+  .checkboxLabel {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f5a623;
+    border-radius: 3px;
+    position: relative;
+    background-color: white;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .checkboxLabel::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 6px;
+    height: 12px;
+    border: solid #f5a623;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none;
+  }
+  
+  .checkboxInput:checked + .checkboxLabel::after {
+    display: block;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #f5a623;
+    color: #ffffff;
+    border: none;
+    border-radius: 42px;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  
+  .button:hover {
+    background-color: #e59422;
+  }

@@ -1,0 +1,70 @@
+.main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.loginContainer {
+  display: flex;
+  flex: 1;
+}
+
+.leftSide {
+  flex: 2; 
+  background-size: cover;
+  background-position: center;
+}
+
+.rightSide {
+  flex: 1.5;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.loginBox {
+  width: 90%; /* Aumentar a largura do container de login */
+  max-width: 450px; /* Definir uma largura máxima maior */
+  padding: 30px; /* Aumentar o padding */
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.379);
+  border-radius: 10px; /* Adicionar bordas arredondadas ao container */
+}
+
+.loginTitle {
+  color: #FFA500;
+  margin: 20px 0;
+  font-size: 24px; /* Tamanho do título do login */
+}
+
+.loginInput {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.registerLink {
+  color: #FFA500;
+  display: block;
+  margin: 15px 0;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #FFA500;
+  border: none;
+  border-radius: 20px; /* Arredondar os botões */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  background-color: #e69500;
+}
